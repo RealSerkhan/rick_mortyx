@@ -1,4 +1,4 @@
-package com.example.crypto_assessment
+package com.realserkhan.rickmorty
 
 import io.flutter.embedding.android.FlutterActivity
 

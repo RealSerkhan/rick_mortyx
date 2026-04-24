@@ -67,5 +67,11 @@ class AppLocalizationsAr extends AppLocalizations {
   String get removeFromFavourites => 'إزالة من المفضلة';
 
   @override
+  String get addedToFavourites => 'تمت الإضافة إلى المفضلة';
+
+  @override
+  String get removedFromFavourites => 'تمت الإزالة من المفضلة';
+
+  @override
   String get yourSavedCharacters => 'شخصياتك المحفوظة';
 }

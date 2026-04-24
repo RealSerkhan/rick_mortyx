@@ -68,5 +68,11 @@ class AppLocalizationsEn extends AppLocalizations {
   String get removeFromFavourites => 'Remove from Favourites';
 
   @override
+  String get addedToFavourites => 'Added to Favourites';
+
+  @override
+  String get removedFromFavourites => 'Removed from Favourites';
+
+  @override
   String get yourSavedCharacters => 'Your saved characters';
 }

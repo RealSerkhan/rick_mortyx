@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:rick_morty/app/theme/app_colors.dart';
 import 'package:rick_morty/base/di/di_entry_point.dart';
+import 'package:rick_morty/base/presentation/utils/app_toast.dart';
 import 'package:rick_morty/features/characters/presentation/blocs/characters_cubit.dart';
 import 'package:rick_morty/features/characters/presentation/blocs/favourites_cubit.dart';
 import 'package:rick_morty/features/characters/presentation/widgets/character_card.dart';
@@ -66,6 +67,12 @@ class _FavouritesScreenState extends State<FavouritesScreen> {
                                               await _cubit.loadFavourites();
                                             }),
                                         onFavouriteToggle: () async {
+                                          final l10n = context.localizations;
+                                          if (character.isFavourite) {
+                                            AppToast.showRemoved(context, l10n.removedFromFavourites);
+                                          } else {
+                                            AppToast.showAdded(context, l10n.addedToFavourites);
+                                          }
                                           await _charactersCubit.toggleFavourite(character);
                                           await _cubit.loadFavourites();
                                         },

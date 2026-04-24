@@ -212,6 +212,18 @@ abstract class AppLocalizations {
   /// **'Remove from Favourites'**
   String get removeFromFavourites;
 
+  /// Toast message when character is added to favourites
+  ///
+  /// In en, this message translates to:
+  /// **'Added to Favourites'**
+  String get addedToFavourites;
+
+  /// Toast message when character is removed from favourites
+  ///
+  /// In en, this message translates to:
+  /// **'Removed from Favourites'**
+  String get removedFromFavourites;
+
   /// Subtitle under favourites title
   ///
   /// In en, this message translates to:

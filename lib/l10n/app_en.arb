@@ -58,6 +58,12 @@
   "removeFromFavourites": "Remove from Favourites",
   "@removeFromFavourites": { "description": "Button label to remove character from favourites" },
 
+  "addedToFavourites": "Added to Favourites",
+  "@addedToFavourites": { "description": "Toast message when character is added to favourites" },
+
+  "removedFromFavourites": "Removed from Favourites",
+  "@removedFromFavourites": { "description": "Toast message when character is removed from favourites" },
+
   "yourSavedCharacters": "Your saved characters",
   "@yourSavedCharacters": { "description": "Subtitle under favourites title" }
 }

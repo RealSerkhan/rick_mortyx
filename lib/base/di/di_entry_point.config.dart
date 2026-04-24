@@ -65,17 +65,17 @@ Future<_i174.GetIt> $initDependencyInjection(
   gh.lazySingleton<_i846.SettingsLocalDataSource>(
     () => _i846.SettingsLocalDataSourceImpl(gh<_i460.SharedPreferences>()),
   );
-  gh.lazySingleton<_i757.HttpClient>(
-    () => networkModule.httpClient(gh<_i361.Dio>()),
-  );
-  gh.lazySingleton<_i1062.CharacterLocalDataSource>(
-    () => _i1062.CharacterLocalDataSourceImpl(gh<_i460.SharedPreferences>()),
-  );
   gh.lazySingleton<_i433.SettingsRepository>(
     () => _i181.SettingsRepositoryImpl(
       gh<_i846.SettingsLocalDataSource>(),
       gh<_i974.Logger>(),
     ),
+  );
+  gh.lazySingleton<_i757.HttpClient>(
+    () => networkModule.httpClient(gh<_i361.Dio>()),
+  );
+  gh.lazySingleton<_i1062.CharacterLocalDataSource>(
+    () => _i1062.CharacterLocalDataSourceImpl(gh<_i460.SharedPreferences>()),
   );
   gh.lazySingleton<_i989.SaveThemeModeUseCase>(
     () => _i989.SaveThemeModeUseCase(gh<_i433.SettingsRepository>()),

@@ -20,5 +20,7 @@
   "lastLocation": "آخر موقع",
   "addToFavourites": "إضافة إلى المفضلة",
   "removeFromFavourites": "إزالة من المفضلة",
+  "addedToFavourites": "تمت الإضافة إلى المفضلة",
+  "removedFromFavourites": "تمت الإزالة من المفضلة",
   "yourSavedCharacters": "شخصياتك المحفوظة"
 }

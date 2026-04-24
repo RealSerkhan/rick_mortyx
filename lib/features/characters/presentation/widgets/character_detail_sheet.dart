@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:shimmer/shimmer.dart';
 import 'package:rick_morty/app/theme/app_colors.dart';
+import 'package:rick_morty/base/presentation/utils/app_toast.dart';
 import 'package:rick_morty/features/characters/domain/entities/character.dart';
 import 'package:rick_morty/l10n/app_localizations_extension.dart';
 
@@ -149,6 +150,11 @@ class CharacterDetailSheet extends StatelessWidget {
         child: ElevatedButton.icon(
           onPressed: () {
             HapticFeedback.mediumImpact();
+            if (character.isFavourite) {
+              AppToast.showRemoved(context, context.localizations.removedFromFavourites);
+            } else {
+              AppToast.showAdded(context, context.localizations.addedToFavourites);
+            }
             onFavouriteToggle();
             Navigator.pop(context);
           },

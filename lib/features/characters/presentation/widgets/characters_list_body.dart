@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:rick_morty/base/presentation/utils/app_toast.dart';
 import 'package:rick_morty/features/characters/domain/entities/character.dart';
 import 'package:rick_morty/features/characters/presentation/widgets/character_card.dart';
 import 'package:rick_morty/features/characters/presentation/widgets/character_detail_sheet.dart';
 import 'package:rick_morty/features/characters/presentation/widgets/character_grid_card.dart';
+import 'package:rick_morty/l10n/app_localizations_extension.dart';
 
 class CharactersListBody extends StatelessWidget {
   const CharactersListBody({
@@ -51,7 +53,10 @@ class CharactersListBody extends StatelessWidget {
         return CharacterCard(
           character: c,
           onTap: () => CharacterDetailSheet.show(context, c, () => onToggleFavourite(c)),
-          onFavouriteToggle: () => onToggleFavourite(c),
+          onFavouriteToggle: () {
+            _showToast(context, c);
+            onToggleFavourite(c);
+          },
         );
       },
     );
@@ -76,9 +81,21 @@ class CharactersListBody extends StatelessWidget {
         return CharacterGridCard(
           character: c,
           onTap: () => CharacterDetailSheet.show(context, c, () => onToggleFavourite(c)),
-          onToggle: () => onToggleFavourite(c),
+          onToggle: () {
+            _showToast(context, c);
+            onToggleFavourite(c);
+          },
         );
       },
     );
+  }
+
+  void _showToast(BuildContext context, Character character) {
+    final l10n = context.localizations;
+    if (character.isFavourite) {
+      AppToast.showRemoved(context, l10n.removedFromFavourites);
+    } else {
+      AppToast.showAdded(context, l10n.addedToFavourites);
+    }
   }
 }

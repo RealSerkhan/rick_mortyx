@@ -6,18 +6,18 @@
     "configurations": [
         
         {
-            "name": "pulse_crypto",
+            "name": "rick and morty (debug mode)",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "pulse_crypto (profile mode)",
+            "name": "rick and morty (debug mode) (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"
         },
         {
-            "name": "pulse_crypto (release mode)",
+            "name": "rick and morty (debug mode) (release mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"

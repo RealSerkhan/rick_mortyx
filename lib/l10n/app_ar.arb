@@ -1,0 +1,24 @@
+{
+  "@@locale": "ar",
+
+  "appTitle": "ريك ومورتي",
+  "charactersTitle": "الشخصيات",
+  "rickAndMortyUniverse": "عالم ريك ومورتي",
+  "switchToLightMode": "التبديل إلى الوضع الفاتح",
+  "switchToDarkMode": "التبديل إلى الوضع الداكن",
+  "searchCharacters": "بحث عن الشخصيات...",
+  "noCharactersFound": "لا توجد شخصيات",
+  "favouritesTitle": "المفضلة",
+  "noFavouritesYet": "لا توجد مفضلة بعد.\nاضغط ♥ على شخصية لحفظها.",
+  "oops": "عذراً!",
+  "unexpectedError": "حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى لاحقاً.",
+  "tryAgain": "حاول مرة أخرى",
+  "species": "النوع",
+  "type": "الصنف",
+  "gender": "الجنس",
+  "origin": "الأصل",
+  "lastLocation": "آخر موقع",
+  "addToFavourites": "إضافة إلى المفضلة",
+  "removeFromFavourites": "إزالة من المفضلة",
+  "yourSavedCharacters": "شخصياتك المحفوظة"
+}

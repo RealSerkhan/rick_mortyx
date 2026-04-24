@@ -1,0 +1,63 @@
+{
+  "@@locale": "en",
+
+  "appTitle": "Rick & Morty",
+  "@appTitle": { "description": "The application title" },
+
+  "charactersTitle": "Characters",
+  "@charactersTitle": { "description": "Characters screen title" },
+
+  "rickAndMortyUniverse": "Rick & Morty Universe",
+  "@rickAndMortyUniverse": { "description": "Subtitle under characters title" },
+
+  "switchToLightMode": "Switch to light mode",
+  "@switchToLightMode": { "description": "Tooltip for theme toggle button" },
+
+  "switchToDarkMode": "Switch to dark mode",
+  "@switchToDarkMode": { "description": "Tooltip for theme toggle button" },
+
+  "searchCharacters": "Search characters...",
+  "@searchCharacters": { "description": "Search bar hint text" },
+
+  "noCharactersFound": "No characters found",
+  "@noCharactersFound": { "description": "Empty state message when search yields no results" },
+
+  "favouritesTitle": "Favourites",
+  "@favouritesTitle": { "description": "Favourites screen title" },
+
+  "noFavouritesYet": "No favourites yet.\nTap ♥ on a character to save it.",
+  "@noFavouritesYet": { "description": "Empty state message on favourites screen" },
+
+  "oops": "Oops!",
+  "@oops": { "description": "Error state heading" },
+
+  "unexpectedError": "An unexpected error occurred. Please try again later.",
+  "@unexpectedError": { "description": "Fallback error message" },
+
+  "tryAgain": "Try Again",
+  "@tryAgain": { "description": "Retry button label" },
+
+  "species": "Species",
+  "@species": { "description": "Character detail label" },
+
+  "type": "Type",
+  "@type": { "description": "Character detail label" },
+
+  "gender": "Gender",
+  "@gender": { "description": "Character detail label" },
+
+  "origin": "Origin",
+  "@origin": { "description": "Character detail label" },
+
+  "lastLocation": "Last Location",
+  "@lastLocation": { "description": "Character detail label" },
+
+  "addToFavourites": "Add to Favourites",
+  "@addToFavourites": { "description": "Button label to add character to favourites" },
+
+  "removeFromFavourites": "Remove from Favourites",
+  "@removeFromFavourites": { "description": "Button label to remove character from favourites" },
+
+  "yourSavedCharacters": "Your saved characters",
+  "@yourSavedCharacters": { "description": "Subtitle under favourites title" }
+}

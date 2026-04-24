@@ -16,6 +16,7 @@ class AppToast {
     _current = null;
 
     final overlay = Overlay.of(context);
+    final colors = context.appColors;
     late OverlayEntry entry;
 
     entry = OverlayEntry(
@@ -23,7 +24,7 @@ class AppToast {
           (_) => _ToastWidget(
             message: message,
             type: type,
-            colors: context.appColors,
+            colors: colors,
             onDismissed: () {
               entry.remove();
               if (_current == entry) _current = null;

@@ -133,8 +133,7 @@ class Result<T> {
       ResultOrigin origin,
       Object error,
       StackTrace? stackTrace,
-    )
-        onError,
+    ) onError,
   }) =>
       map(
         onLoading: (value) => onLoading(value.origin),
@@ -188,7 +187,7 @@ class LoadingResult<T> extends Result<T> {
   String toString() => 'LoadingResult<$T>.loading(origin: $origin)';
 
   @override
-  bool operator ==(dynamic other) =>
+  bool operator ==(Object other) =>
       identical(this, other) ||
       (other.runtimeType == runtimeType && other is LoadingResult<T> && origin == other.origin);
 
@@ -209,7 +208,7 @@ class DataResult<T> extends Result<T> {
   String toString() => 'DataResult<$T>.data(origin: $origin, value: $value)';
 
   @override
-  bool operator ==(dynamic other) =>
+  bool operator ==(Object other) =>
       identical(this, other) ||
       (other.runtimeType == runtimeType &&
           other is DataResult<T> &&
@@ -240,7 +239,7 @@ class ErrorResult<T> extends Result<T> {
       'stackTrace: $stackTrace)';
 
   @override
-  bool operator ==(dynamic other) =>
+  bool operator ==(Object other) =>
       identical(this, other) ||
       (other.runtimeType == runtimeType &&
           other is ErrorResult<T> &&

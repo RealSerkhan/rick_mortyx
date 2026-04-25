@@ -10,7 +10,7 @@ class ResultException extends Error {
   String toString() => 'ResultException: $message';
 
   @override
-  bool operator ==(dynamic other) =>
+  bool operator ==(Object other) =>
       identical(this, other) ||
       (other.runtimeType == runtimeType && other is ResultException && other.message == message);
 

@@ -148,7 +148,7 @@ void main() {
           () => [
             const CharactersState.loading(),
             CharactersState.loaded(characters: tCharactersPage.characters, currentPage: 1, hasNextPage: true),
-            CharactersState.loaded(characters: const [tCharacterFavourited], currentPage: 1, hasNextPage: true),
+            const CharactersState.loaded(characters: [tCharacterFavourited], currentPage: 1, hasNextPage: true),
           ],
     );
 
@@ -158,7 +158,7 @@ void main() {
       setUp: () {
         when(() => toggleFavourite(any())).thenAnswer((_) async => const Left(ServerFailure(errorMessage: 'error')));
       },
-      seed: () => CharactersState.loaded(characters: const [tCharacter], currentPage: 1, hasNextPage: false),
+      seed: () => const CharactersState.loaded(characters: [tCharacter], currentPage: 1, hasNextPage: false),
       act: (cubit) => cubit.toggleFavourite(tCharacter),
       expect: () => <CharactersState>[],
     );

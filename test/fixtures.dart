@@ -24,6 +24,6 @@ const tCharacterFavourited = Character(
   isFavourite: true,
 );
 
-final tCharactersPage = CharactersPage(characters: [tCharacter], currentPage: 1, totalPages: 3, hasNext: true);
+final tCharactersPage = const CharactersPage(characters: [tCharacter], currentPage: 1, totalPages: 3, hasNext: true);
 
-final tCharactersPageLast = CharactersPage(characters: [tCharacter], currentPage: 3, totalPages: 3, hasNext: false);
+final tCharactersPageLast = const CharactersPage(characters: [tCharacter], currentPage: 3, totalPages: 3, hasNext: false);

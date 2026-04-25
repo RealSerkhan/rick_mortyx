@@ -95,6 +95,7 @@ class _LivePillBadge extends StatelessWidget {
             ),
           ),
           SizedBox(width: 7.w),
+          
           Text(
             'RICK & MORTY UNIVERSE',
             style: TextStyle(
